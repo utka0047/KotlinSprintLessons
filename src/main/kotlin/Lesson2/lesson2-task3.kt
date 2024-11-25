@@ -7,18 +7,17 @@ package Lesson2
 //– Выведи результат в консоль.
 
 const val MINUTE_IN_HOUR = 60
+const val HOURS_IN_DAY = 24
 
 fun main() {
     val departureHour = 9
     val departureMinute = 39
-    val travelMinutes = 457
 
+    val travelMinutes = 457
     val totalMinutes = departureHour * MINUTE_IN_HOUR + departureMinute + travelMinutes
 
-    val arrivalHour = (totalMinutes / MINUTE_IN_HOUR) % 24
-    val arrivalMinute = totalMinutes % 60
+    val arrivalHour = (totalMinutes / MINUTE_IN_HOUR) % HOURS_IN_DAY
+    val arrivalMinute = totalMinutes % MINUTE_IN_HOUR
     val arrivalTime = String.format("%02d:%02d", arrivalHour, arrivalMinute)
     println(arrivalTime)
-
-
 }
