@@ -6,19 +6,17 @@ package Lesson2
 //которые даются “сверху” баффом). По одной строке на материал с его названием.
 //Если получается нецелое число, то дробная часть должна отбрасываться.
 
-const val BUFF = 0.2
 
 fun main () {
-    
+
+    val buff = 20
     val crystalOre = 7
     val ironOre = 11
 
-    val crystalBuff = (crystalOre * BUFF).toInt()
-    val ironBuff = (ironOre * BUFF).toInt()
+    val crystalBuff = (crystalOre * buff) / 100
+    val ironBuff = (ironOre * buff) / 100
 
     println("Кристаллическая руда: $crystalBuff")
     println("Железная руда: $ironBuff")
 
-
-    
 }
