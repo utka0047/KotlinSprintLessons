@@ -11,13 +11,11 @@ fun main() {
 
     val moveData = "D2-D4;0"
 
-    val parts = moveData.split(";")
-    val move = parts[0]
-    val moveNumber = parts[1].toInt()
+    val parts = moveData.split("-", ";")
+    val moveNumber = parts[2].toInt()
 
-    val moveParts = move.split("-")
-    val beginning = moveParts[0]
-    val end = moveParts[1]
+    val beginning = parts[0]
+    val end = parts[1]
 
     println(beginning)
     println(end)
