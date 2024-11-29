@@ -10,14 +10,17 @@ package Lesson3
 
 fun main() {
 
-    val beginning = "E2"
+    var beginning = "E2"
     var end = "E4"
-    val number = 1
-    val message = "$beginning-$end;$number"
+    var number = 1
+    var message = "[$beginning-$end;$number]"
     println(message)
 
+    beginning = "D2"
     end = "D${2+1}"
-    println(end)
+    number = number + 1
+    message = "[$beginning-$end;$number]"
+    println(message)
 
 
 
