@@ -5,11 +5,11 @@ fun main() {
 
     println("""
         |Решите задачу, чтобы войти
-        |2+2=?""".trimMargin())
+        |2+2""".trimMargin())
 
     val captcha = readln().toInt()
 
-    if (captcha == 4) {
+    if (captcha == 2+2) {
         println("Добро пожаловать!")
     }
     else {
