@@ -3,13 +3,15 @@ package Lesson5
 
 fun main() {
 
+    val task = "2+2"
+    val taskResponse = 2+2
     println("""
         |Решите задачу, чтобы войти
-        |2+2""".trimMargin())
+        |$task""".trimMargin())
 
     val captcha = readln().toInt()
 
-    if (captcha == 2+2) {
+    if (captcha == taskResponse) {
         println("Добро пожаловать!")
     }
     else {
