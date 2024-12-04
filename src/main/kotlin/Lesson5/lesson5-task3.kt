@@ -9,13 +9,13 @@ fun main() {
     val userNum1 = readln().toInt()
     val userNum2 = readln().toInt()
 
-    if (userNum1 == num1 && userNum2 == num2) {
+    if ((userNum1 == num1 && userNum2 == num2) || (userNum1 == num2 && userNum2 == num1)) {
         println("Поздравляем! Вы выиграли главный приз!")
     }
     else if (userNum1 == num1 || userNum2 == num2) {
         println("Вы выиграли утешительный приз!")
     }
-    else if (userNum1 != num1 && userNum2 != num2) {
+    else {
         println("Неудача!")
     }
 }
