@@ -4,10 +4,10 @@ const val PROHIBITED_SEASON = "зима"
 fun main() {
 
     val isSunny: Boolean = true
-    val tent: Boolean = true
+    val isAwningOpen: Boolean = true
     val humidity: Int = 20
-    val season: String = "зима"
+    val isSeason: String = "зима"
 
-    val result: Boolean = isSunny && tent && (humidity == REQUIRED_HUMIDITY) && (season != PROHIBITED_SEASON)
+    val result: Boolean = isSunny && isAwningOpen && (humidity == REQUIRED_HUMIDITY) && (isSeason != PROHIBITED_SEASON)
     println("Благоприятные ли условия сейчас для роста бобовых? $result")
 }
