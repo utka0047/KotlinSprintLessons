@@ -1,22 +1,20 @@
-package Lesson5
-
-
-
 fun main() {
-
     val userLogin = "Zaphod"
     val userPassword = "PanGalactic"
-
-    println("Введите логин и пароль")
+    println("введите логин:")
     val login = readln()
-    val password = readln()
 
-    if (userLogin == login && userPassword == password) {
-        println("Добро пожаловать")
+    if (login == userLogin) {
+        println("введите пароль:")
+        val password = readln()
+
+        if (password == userPassword) {
+            println("добро пожаловать")
+        } else {
+            println("неверный пароль. попробуйте снова")
+        }
+
+    } else {
+        println("пассажир не найден. зарегистрируйтесь прямо сейчас!")
     }
-    else {
-        println("Пассажир не найден. Зарегистрируйтесь прямо сейчас!")
-    }
-
-
 }
